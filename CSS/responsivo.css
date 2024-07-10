@@ -1,0 +1,267 @@
+@media screen and (max-width: 960px) {
+    body{
+        padding: 0;
+        margin:0;
+        width: 100vw;
+        height: 100vh;
+    }
+    header{
+        width: 100%;
+        height: 6%;
+        margin-top: 0;
+    }
+    main{
+        margin: 0 auto;
+    }
+    #Home{
+        padding: 4px;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #Sobre{
+        padding: 4px;
+        height: 100vh;
+    }
+    .text-sobre{
+        margin-top: 10px;
+        margin-left: 2%;
+        margin-right: 1%;
+    }
+    .img-brother{
+        top: 145%;
+        height: 100%;
+        width: 100%;
+    }
+    .img-brother img{
+        width: 100%;
+        height: 60%;
+    }
+
+    #Newest{
+        padding: 4px;
+        height: 100vh;
+        background-repeat: round;
+    }
+
+    #Contribuir{
+        padding: 4px;
+        height: 100vh;
+        background-repeat: round;
+    }
+
+    #Support{
+        padding: 4px;
+        height: 100vh;
+    }
+    .social{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    body{
+        padding: 0;
+        margin:0;
+        width: 100vw;
+        height: 100vh;
+    }
+    header{
+        width: 100%;
+        height: 6%;
+        margin-top: 0;
+    }
+    main{
+        margin: 0 auto;
+    }
+    #Home{
+        padding: 4px;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #Sobre{
+        padding: 4px;
+        height: 100vh;
+    }
+    .titulo{
+        margin-top: 3%;
+    }
+    .text-sobre{
+        margin-top: 10px;
+        margin-left: 2%;
+        margin-right: 1%;
+    }
+    .img-brother{
+        top: 105%;
+        height: 100vh;
+        width: 100%;
+    }
+    .img-brother img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #Newest{
+        padding: 4px;
+        height: 100vh;
+        background-repeat: round;
+    }
+
+    #Contribuir{
+        padding: 4px;
+        height: 100vh;
+        background-repeat: round;
+    }
+
+    #Support{
+        padding: 4px;
+        height: 100vh;
+    }
+    .social{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        padding: 0;
+        margin:0;
+        width: 100vw;
+        height: 100vh;
+    }
+    header{
+        width: 50%;
+        height: 100vh;
+        margin-top: 0;
+        opacity: 0;
+    }
+    header nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    main{
+        margin: 0 auto;
+    }
+    #Home{
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+    .container-home{
+        background-color: #000;
+        height: 100vh;
+        position: relative;
+    }
+    container-home .img-elements{
+       position: absolute;
+    }
+    .container-home .img-elements img{
+        width: 100vw;
+        height: 100%;
+    }
+
+    #Sobre{
+        padding: 0;
+        height: 100vh;
+    }
+    .titulo{
+        margin-top: 3%;
+        font-size: 19px;
+    }
+    .text{
+        background: linear-gradient(#deeab0a8, #e4e4e496, #deeab0a8);
+        backdrop-filter: blur(15px);
+    }
+    .text-sobre{
+        font-size: 17px;
+        font-weight: 400;
+        gap: 0;
+        margin-top: 8px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .img-brother{
+        top: 160%;
+        height: 100vh;
+        width: 100vw;
+    }
+    .img-brother img{
+        width: 100%;
+        height: 40%;
+    }
+
+    #Newest{
+        padding: 0;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 300%;
+        background-position: center;
+    }
+    .titulo_new{
+        font-size: 20px;
+    }
+    .box-container{
+        margin-top: 20px;
+        width: 300px;
+        height: 600px;
+    }
+    .img-box{
+        width: 100%;
+        height: 300px;
+    }
+    .text-box h3{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .text-box p{
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    #Contribuir{
+        padding: 0;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 300%;
+        background-position: center;
+    }
+    #Contribuir .titulo h2{
+        font-size: 30px;
+    }
+    .tex_Contribuir{
+        margin-top: 50px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .box-button-pix{
+        width: 170px;
+        height: 60px;
+        margin-left: 30%;
+    }
+
+
+    #Support{
+        padding: 0px;
+        height: 100vh;
+        width: 100vw;
+        background-size: 300%;
+    }
+    #Support .titulo h1{
+        font-size: 22px;
+    }
+    .e-mail{
+        font-size: 19px;
+    }
+    .social{
+        margin-top: 50px;
+        font-size: 19px;
+    }
+    .register-footer{
+        top: 530%;
+        font-size: 12px;
+        left: 10%;
+        right: 10%;
+    }
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: none;
+    border: none;
+}
+
+:root{
+    padding: 0;
+    margin: 0 auto;
+}
+
+body{
+    list-style: none;
+    border: 0;
+    border-radius: 0;
+}
+
+footer{
+    text-decoration: none;
+}
+
+
+
+
+
+

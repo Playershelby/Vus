@@ -1,0 +1,392 @@
+*{
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    width: 100vw;
+    height: 100vh;
+    scrollbar-width: 2px;
+    scroll-behavior: smooth;
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    background-color: #161616b0;
+    backdrop-filter: blur(10px);
+    border: 1px dashed #696969ce;
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    z-index: 1;
+}
+header nav{
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+    justify-content: center;
+    gap: 25px;
+}
+header nav li a p{
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-decoration-line: underline;
+}
+
+main{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#Home{
+    width: 100vw;
+    height: 100vh;
+}
+.container-home{
+    padding: 0;
+    margin: 0;
+}
+.container-home .img-elements{
+    background-color: #000;
+}
+.container-home .img-elements img{
+    width: 100%;
+    height: 100vh;
+}
+
+#Sobre{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#f5ffd08a, #e6f8a7, #d8ddc1,#8c917d,#6b6b67,#000000);
+    z-index: -1;
+}
+.titulo{
+    margin-top: 8%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow:1px 1px 10px #000000;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.text-sobre{
+    padding: 10px;
+    text-align: justify;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background: linear-gradient(#deeab08a, #e4e4e496, #deeab08a);
+    backdrop-filter: blur(10px);
+    border: 2px outset #DDEAB0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px #141414cb;
+}
+.img-brother{
+    position: absolute;
+    top: 102%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    mix-blend-mode: hard-light;
+}
+.img-brother img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#Newest{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../VUS_The_chosen_files/Background_Newest.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Newest ul{
+    display: flex;
+    gap: 25px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.titulo_new{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow:1px 1px 8px #161616;
+    text-transform: uppercase;
+    color: #e4e4e4;
+}
+.box-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    width: 350px;
+    height: 650px;
+    background: linear-gradient(#deeab08a, #e4e4e496, #deeab08a);
+    backdrop-filter: blur(10px);
+    border: 1px outset #DDEAB0;
+    border-radius: 8px;
+    text-align: justify;
+    box-shadow: 1px 1px 8px #000000;
+    position: relative;
+}
+.img-box{
+    width: 100%;
+    height: 350px;
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.text-box{
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+.text-box::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(transparent, #deeab09a) ;
+}
+.text-box h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    top: 5px;
+    color: #252525;
+    position: relative;
+}
+.text-box p{
+    padding: 10px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+    color: #252525;
+}
+.read_button{
+    border: none;
+    padding: 10px;
+    background:linear-gradient(transparent, #deeab09a) ;
+    color: #4d0000;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.read_button:hover{
+    box-shadow: 1px 1px 10px #161616;
+    transition: 0.5s;
+}
+.box-container.active {
+    height: auto;
+}
+.box-container.active .text-box::before{
+    visibility: hidden;
+}
+
+
+#Contribuir{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../VUS_The_chosen_files/Background_King-of-Money.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Contribuir .titulo h2{
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 550;
+    text-transform: capitalize; 
+    color: #ffffff;
+    text-shadow: 2px 2px 10px #000000;
+}
+.tex_Contribuir{
+    margin-top: 100px;
+    padding: 4px;
+    font-size: 20px;
+    font-weight: 550;
+    text-shadow:1px 1px 8px #161616;
+    color: #000000;
+    text-align: center;
+    background-color: #9cff8f79;
+    backdrop-filter: blur(14px);
+    border: 1px outset #9cff8f79;
+    border-radius: 5px; 
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.tex_Contribuir :nth-child(2){
+    padding: 5px;
+    margin-top: 10px;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 550;
+    position: relative;
+}
+.tex_Contribuir :nth-child(2)::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    height: 4px;
+    width: 50%;
+    background:linear-gradient( #000, transparent, #4d0000);
+    border-radius: 50px;
+}
+.box-button-pix{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    position: relative;
+    justify-content: center;
+}
+.box-button-pix .pix{
+    padding: 4px;
+    width: 350px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow:1px 1px 8px #161616;
+    background-color: #9cff8f79;
+    backdrop-filter: blur(15px);
+    cursor: pointer;
+}
+.box-button-pix .pix p{
+    font-size: 14px;
+    font-style: italic;
+}
+.box-button-pix .pix:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.box-button-crédito .credito{
+    padding: 4px;
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow:1px 1px 8px #161616;
+    background-color: #9cff8f79;
+    backdrop-filter: blur(15px);  
+    cursor: pointer;
+}
+.box-button-crédito .credito p{
+    font-size: 14px;
+    font-style: italic;
+}
+.box-button-crédito .credito:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+#Support{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 8px #000000;
+}
+#Support .titulo{
+    margin-top: 02px;
+}
+#Support .titulo h1{
+    padding: 30px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 4px 15px #1f23ff;
+}
+.e-mail{
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 2px 4px 10px #1f23ff;
+}
+.e-mail p{
+    margin-top: 10px;
+    font-style: oblique;
+}
+.social{
+    margin-top: 150px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 2px 4px 10px #1f23ff;
+}
+.box-icons{
+    padding: 5px;
+    margin: 20px;
+    margin-top: 50px;
+    transform-origin: center;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    font-size: 35px;
+}
+.Insta{
+    color: #ffff;
+}
+.Insta:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.Ytb{
+    color: #fff;
+}
+.Ytb:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}    
+.Pin{
+    color: #ffff;
+}
+.Pin:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.register-footer{
+    position: absolute;
+    top: 550%;
+    left: 20%;
+    right: 20%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    z-index: 1;
+}
+.img-back-footer{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    align-content: center;
+    z-index: 0;
+}
+.img-back-footer img{
+    width: 100%;
+    height: 100%;
+}
